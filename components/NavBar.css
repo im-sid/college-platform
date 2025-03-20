@@ -1,0 +1,49 @@
+nav {
+    background-color: #007bff; /* Blue background */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #e0e0e0; /* Light gray on hover */
+  }
+  
+  /* Style for the notification link and count */
+  nav a span {
+    background-color: #ff4d4f; /* Red badge for notification count */
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 10px;
+    margin-left: 5px;
+    vertical-align: middle;
+  }
+  
+  /* Style for the logout button */
+  nav button {
+    background-color: #ff4d4f; /* Red button */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav button:hover {
+    background-color: #e63946; /* Darker red on hover */
+  }

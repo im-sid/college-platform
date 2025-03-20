@@ -1,0 +1,66 @@
+.notifications {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .notifications h2 {
+    margin-bottom: 20px;
+  }
+  
+  .filter-controls {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .filter-controls label {
+    font-weight: 500;
+  }
+  
+  .filter-controls select {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+  }
+  
+  .filter-controls select:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  .notifications ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .notifications li {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .notifications li.unread {
+    background-color: #f0f8ff;
+    font-weight: bold;
+  }
+  
+  .notifications li.read {
+    background-color: #f5f5f5;
+  }
+  
+  .notifications li:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .notifications p {
+    color: #666;
+    text-align: center;
+  }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -101,3 +102,19 @@ notificationChangeStream.on('change', (change) => {
 
 const PORT = process.env.PORT || 5000;
 server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+=======
+import React from 'react';
+import ReactDOM from 'react-dom/client'; // Note the change in import
+import { BrowserRouter } from 'react-router-dom';
+import App from './App';
+
+// Create a root
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+// Render the app
+root.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+);
+>>>>>>> ee8bf616729a7cdba8394864143c4aaaecd979fb
