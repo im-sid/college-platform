@@ -1,0 +1,34 @@
+.admin-home {
+    background-color: #2C3E50;
+    color: #ECF0F1;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  .admin-home h2 {
+    color: #E74C3C;
+  }
+  .admin-home h3 {
+    color: #3498DB;
+  }
+  .admin-tools {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #34495E;
+    border-radius: 8px;
+    display: flex;
+  }
+  .admin-tools h3 {
+    color: #E74C3C;
+  }
+  .admin-tools ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  .admin-tools li {
+    margin-bottom: 10px;
+  }
+  .admin-tools a {
+    color: #3498DB;
+    text-decoration: none;
+  }

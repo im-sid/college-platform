@@ -1,0 +1,122 @@
+/* Vertical Sidebar */
+nav {
+  background-color: #1a2526; /* Dark teal background */
+  width: 250px; /* Fixed width for the sidebar */
+  height: calc(100vh - 50px); /* Adjusted height for taskbar */
+  position: fixed; /* Fixed position on the left */
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  padding: 20px;
+  padding-bottom: 30px; /* Extra padding at the bottom */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Shadow on the right side */
+  transition: transform 0.3s ease; /* Smooth transition for sidebar toggle */
+}
+
+/* Links in the sidebar */
+nav a {
+  color: #e0e0e0; /* Light gray text */
+  text-decoration: none;
+  margin: 15px 0; /* Vertical spacing between links */
+  padding: 10px 15px; /* Padding for better hover area */
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px; /* Rounded corners for hover background */
+  position: relative; /* For the underline animation */
+  display: block; /* Ensure the link takes the full width */
+  transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+/* Underline animation for hover */
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #4a6a6d; /* Muted teal-gray for underline */
+  bottom: 0;
+  left: 15px; /* Align with padding */
+  transition: width 0.3s ease; /* Smooth underline growth */
+}
+
+/* Hover effect for links */
+nav a:hover {
+  color: #4a6a6d; /* Muted teal-gray on hover */
+  background-color: rgba(74, 106, 109, 0.1); /* Subtle muted teal-gray background on hover */
+  transform: scale(1.02); /* Slight scale effect */
+}
+
+/* Underline grows on hover */
+nav a:hover::after {
+  width: calc(100% - 30px); /* Full width minus padding */
+}
+
+/* Active/selected link style */
+nav a.active {
+  background-color: rgba(74, 106, 109, 0.2); /* Slightly darker muted teal-gray background for active link */
+  color: #4a6a6d; /* Muted teal-gray text for active link */
+  position: relative; /* For the left border */
+  transform: translateY(-5px); /* Increased lift effect: move up by 5px */
+  box-shadow: 
+    0 2px 5px rgba(0, 0, 0, 0.2), /* Existing shadow for depth */
+    0 0 8px rgba(255, 255, 255, 0.3); /* White glow effect */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth lift and shadow transition */
+}
+
+/* Left border for active link */
+nav a.active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  box-shadow: #e0e0e0;
+  background-color: #4a6a6d; /* Muted teal-gray left border */
+}
+
+/* Style for the notification link and count */
+nav a span {
+  background-color: #ff6b6b; /* Softer red for the notification badge */
+  color: white;
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 12px;
+  margin-left: 10px;
+  vertical-align: middle;
+  transition: transform 0.2s ease; /* Animation for badge */
+}
+
+/* Slight bounce effect for notification badge on hover */
+nav a:hover span {
+  transform: scale(1.1); /* Slight scale effect for the badge */
+}
+
+/* Style for the logout button */
+nav button {
+  background-color: #ff6b6b; /* Softer red for the logout button */
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: auto; /* Push the logout button to the bottom */
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover effect for the logout button */
+nav button:hover {
+  background-color: #ff8787; /* Lighter red on hover */
+  transform: scale(1.05); /* Slight scale effect */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+}
+
+/* Hide the toggle button on larger screens */
+@media (min-width: 768px) {
+  button[onClick="toggleSidebar"] {
+    display: none !important;
+  }
+}

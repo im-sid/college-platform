@@ -1,0 +1,246 @@
+.post-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 15px 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post-header {
+    margin-bottom: 10px;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-info span {
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .post-content h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .post-content p {
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  .post-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .like-button,
+  .comments-button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .like-button {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .like-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .comments-button {
+    background-color: #6c757d;
+    color: white;
+  }
+  
+  .comments-button:hover {
+    background-color: #5a6268;
+  }
+  
+  .post-comments {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #e0e0e0;
+  }
+  
+  .comment {
+    margin: 10px 0;
+  }
+  
+  .comment p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .comment-form {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .comment-form input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .comment-form button {
+    padding: 8px 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .comment-form button:hover {
+    background-color: #218838;
+  }
+  /* Existing styles */
+.post-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.post-content h3 {
+  margin: 0 0 10px;
+  font-size: 1.2em;
+}
+
+.post-content p {
+  margin: 5px 0;
+}
+
+.post-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.like-button, .comments-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.like-button:hover, .comments-button:hover {
+  background-color: #0056b3;
+}
+
+.post-comments {
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.comment {
+  margin-bottom: 10px;
+}
+
+.comment-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.comment-form input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.comment-form button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+}
+
+.comment-form button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* New style for the delete button */
+.delete-button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #E74C3C; /* Matches admin color palette */
+  color: #ECF0F1;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+  background-color: #c0392b; /* Darker shade on hover */
+}
+/* Existing styles (if any) */
+/* Existing styles (if any) */
+
+/* Base styles for post-card to ensure the highlight is visible */
+.post-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background-color: #fff; /* Ensure a default background */
+}
+
+/* Highlight for the post */
+.highlight-post {
+  background-color: #e6f3ff !important; /* Light blue background, use !important to override */
+  border: 3px solid #007bff !important; /* Thicker blue border for visibility */
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.3); /* Add a subtle glow */
+  transition: background-color 0.5s ease, border 0.5s ease, box-shadow 0.5s ease; /* Smooth transition */
+}
+
+/* Highlight for the comment */
+.highlight-comment {
+  background-color: #fff3cd !important; /* Light yellow background */
+  border-left: 4px solid #ffc107 !important; /* Yellow border on the left */
+  padding-left: 8px; /* Add some padding for better appearance */
+  transition: background-color 0.5s ease, border 0.5s ease; /* Smooth transition */
+}
+
+/* Ensure comment styles are not overridden */
+.comment {
+  padding: 5px;
+  margin: 5px 0;
+}
